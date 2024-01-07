@@ -95,7 +95,7 @@ m <- leaflet(merged_data) %>%
   setView(lng = 0, lat = 30, zoom = 2)
 
 # Speichern Sie die Karte als HTML-Datei
-saveWidget(m, file="meineKarte.html", selfcontained = FALSE)
+saveWidget(m, file="index.html", selfcontained = FALSE)
 
 # Ändern Sie die Größe des HTML-Elements, das die Karte enthält, auf 1920x1080
-htmltools::tags$style(type = "text/css", "#htmlwidget_container { width:1920px; height:1080px; }")
+htmltools::tags$style(type = "text/css", "#htmlwidget_container { width:1280px; height:720px; }")
