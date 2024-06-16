@@ -16,19 +16,18 @@
 }
 
 .project-item {
+    display: block;
     padding-top: 3%;
     padding-bottom: 3%;
     flex: 1;
     color: rgb(253, 255, 226);
 }
 
-.project-item > p, 
-.project-item > a {
-    padding-left: 20px;
-    padding-right: 20px;
-    text-decoration: none;
+.project-item > p
+ {
+  
+ text-decoration: none;
     color: rgb(253, 255, 226);
-    display: block; /* Beide Elemente als Block-Elemente behandeln */
 }
 
 .project-item-img {
@@ -43,18 +42,18 @@
     width: 100%;
 }
 
-.project-item a {
-    margin-left: 20px;
+.link-btn{
+    margin-left: 22px;
+    height: 1px;
     width: 5%;
+    height: 10%;
     border: 2px dashed rgb(253, 255, 226);
-    border-radius: 3px;
+    border-radius: 5px;
     opacity: 0.3;
     background: rgb(131, 180, 255);
 }
 
-.project-item a:hover {
-    border: 2px dashed rgb(253, 255, 226);
-    border-radius: 3px;
+.link-btn:hover {
     opacity: 1;
     background: rgb(131, 180, 255);
     transition: opacity 0.4s;
@@ -69,4 +68,15 @@
     border: 0.5px solid rgb(253, 255, 226);
     padding: 15px;
     box-sizing: content-box;
+}
+
+.carousel__slide img {
+    object-fit: contain; /* Das Bild wird skaliert, um sowohl Höhe als auch Breite zu passen, während das Seitenverhältnis erhalten bleibt. */
+    width: 90%; /* Die Breite des Bildes beträgt 90% des umgebenden divs. */
+    height: auto; /* Die Höhe des Bildes wird automatisch angepasst, um das Seitenverhältnis zu erhalten. */
+}
+.carousel {
+    padding: 3%;
+    width: 147%; /* Die Breite des Karussells beträgt 100% des umgebenden divs. */
+    height: auto; /* Die Höhe des Karussells wird automatisch angepasst. */
 }

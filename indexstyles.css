@@ -59,10 +59,12 @@ body {
 
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: center;
     box-shadow:  0px 0px 8cap rgba(0,0,0,0.2);
     margin-bottom: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
 
 }
 
@@ -73,13 +75,16 @@ body {
 }
 
 .flex-item >p{
-    padding-left: 20px;
-    padding-right: 20px;
+
 }
 
 .language-java{
     font-family: "Titillium Web", sans-serif;
     border-radius: 6px;
-    margin-left: 2%;
 }
 
+h1{
+    color: rgb(253, 255, 226);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    padding-left: 4%;
+}
