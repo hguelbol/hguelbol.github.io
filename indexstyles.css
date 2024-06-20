@@ -1,5 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@media(min-width: 319px) and (max-width:480px){
+    html, body {
+        height: 100vh;
+            
+        font-size: small;
 
+    }
+    p{
+        display: inline;
+        justify-content: left;
+        align-items: center;
+        text-align: left;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+    
+    .lead h1{
+        width: 94%;
+        margin-left: 0;
+        margin-right: 0;
+        color: rgb(253, 255, 226);
+        box-shadow: 0px 0px 1cap rgba(0, 0, 0, 0.2);
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .head-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 3%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+    }
+
+    .flex-item{
+        scale: 0.75;
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-item >p{
+        margin-top: -15%;
+    }
+
+    
+
+}
 body {
     font-size: large;
     font-weight: 500;
@@ -13,19 +73,17 @@ body {
 .nav-container {
     z-index: 1000;
     border-radius: 10px;
-    width: auto;
+    width: 100vh;
     margin: 0 auto;
 }
 
 .nav-list {
     display: flex;
     justify-content: space-between;
-    margin-left: 1%;
-    margin-right: 1%;
     align-items: center;
     color: rgb(253, 255, 226);
     margin-bottom: 2%;
-
+    margin-right: 3%;
 }
 
 .nav-list a {
@@ -33,8 +91,8 @@ body {
     text-decoration: none;
     color: rgb(253, 255, 226);
     opacity: 0.5;
-    padding-left: 15px;
     transition:  0.2s;
+    padding-right: 10px;
 }
 
 .nav-list a:hover {
@@ -50,6 +108,7 @@ body {
 
 
 .title{
+    width: fit-content;
     font-size: large;
     color: rgb(253, 255, 226);
     opacity: 0.7;
@@ -57,11 +116,23 @@ body {
 }
 
 
+
+@media(max-width:1200px) and (min-width: 481px){
+}
+
+@media(max-width:1600px) and (min-width: 1201px){
+}
+
+@media(min-width: 1601px){
+}
+
+
+
 .flex-container {
     display: flex;
     justify-content: left;
     align-items: center;
-    box-shadow:  0px 0px 8cap rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 3%;
     margin-left: 3%;
     margin-right: 3%;
@@ -69,22 +140,65 @@ body {
 }
 
 .flex-item{
-    flex:1;
     color: rgb(253, 255, 226);
     
 }
 
-.flex-item >p{
-
-}
-
-.language-java{
+.language-java code{
+    width: 100%;
+    margin-right: 10%;
     font-family: "Titillium Web", sans-serif;
-    border-radius: 6px;
 }
+
+code{
+    border-radius: 6px;
+    margin: 10%
+}
+
+
 
 h1{
     color: rgb(253, 255, 226);
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
-    padding-left: 4%;
+    box-shadow: 0px 0px 1cap rgba(0, 0, 0, 0.2);
+
 }
+
+pre{
+    white-space: pre-wrap;
+}
+
+
+footer{
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+
+    margin-right: 1%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+footer i{
+    color: rgb(253, 255, 226);
+    margin-right: 1%;
+}
+
+.hoverable {
+    margin-right: 1.5%;
+    opacity: 0.1;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.hoverable:hover {
+    opacity: 1;
+    transform: scale(1.4);
+}
+hr{
+    opacity: 0.1;
+    font-weight: 100;
+}
+
+
+
+
+

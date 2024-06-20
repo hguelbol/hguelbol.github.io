@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="de">
+<lang="de">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://hguelbol.github.io/indexstyles.css"/>
-    <link rel="stylesheet" href="https://hguelbol.github.io/skillstyles.css"/>
-    <link rel="stylesheet" href="https://hguelbol.github.io/project.css"/>
-    <!--Carousel von codepen.io-->
-    <link rel="stylesheet" href="https://hguelbol.github.io/carousel.css"/>
+    <link rel="stylesheet" href="/hguelbol.github.io/indexstyles.css"/>
+    <link rel="stylesheet" href="/hguelbol.github.io/skillstyles.css"/>
+    <link rel="stylesheet" href="/hguelbol.github.io/project.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
@@ -16,28 +14,20 @@
     <script>hljs.highlightAll();</script>
     <title>Portfolio</title>
 </head>
-<body>
-<nav class="nav-list">
-    <h1 class="title">Hakan Gülbol</h1>
-    <div class="head-right">
-        <a href="index.html"><span class="enum">1. </span>Home</a>
-        <a href="aboutme.html"><span class="enum">2. </span>About Me</a>
-        <a href="currentprojects.html"><span class="enum">3. </span>Current Coding Projects</a>
-        <a href="music.html"><span class="enum">4. </span>Musicproduction</a>
-    </div>
-</nav>
+<header>
+    <nav class="nav-list">
+        <h1 class="title"><span class="devicon-github-original"></span> Gülbol</h1>
+        <div class="head-right">
+            <a href="index.html"><span class="enum">1. </span>Home</a>
+            <a href="aboutme.html"><span class="enum">2. </span>About Me</a>
+            <a href="currentprojects.html"><span class="enum">3. </span>Current Coding Projects</a>
+            <a href="music.html"><span class="enum">4. </span>Musicproduction</a>
+        </div>
+    </nav>
+    </header>
+    
 <div class="flex-container">
-    <div class="flex-item">
-        <p>
-            Hello, I am Hakan Gülbol.
-            <br>
-            I am a Software Developer and also a Musician.<br>
-            My Coding Journey started with Java.<br>
-            After a long and exhausting Coding-Journey with excursions through Languages such as Python, C and C++, i
-            found back to Java.<br>
-            You may could name me an Java Enthusiast by now.
-        </p>
-    </div>
+
     <div class="flex-item">
         <pre>
               <code class="language-java">
@@ -65,12 +55,23 @@ public class CodeforcesContest188ProblemB{
         </pre>
         <p style="padding-bottom: 3%">Meine Lösung für Codeforces Contest 188 -  Problem B</p>
     </div>
+    <div class="flex-item">
+        <p>
+            Hello, I am Hakan Gülbol.
+            <br>
+            I am a Software Developer and also a Musician.<br>
+            My Coding Journey started with Java.<br>
+            After a long and exhausting Coding-Journey with excursions through Languages such as Python, C and C++, i
+            found back to Java.<br>
+            You may could name me an Java Enthusiast by now.
+        </p>
+    </div>
 </div>
 <div class="projects">
     <h1 class="lead"><u>Competitive Programming</u></h1>
     <div class="project-container">
         <div class="project-item-img" style="margin-right: 5%;">
-            <img class="logo" src="https://hguelbol.github.io/img/comp.png">
+            <img class="logo" src="/hguelbol.github.io/img/comp.png">
         </div>
         <div class="project-item">
             <p>
@@ -93,9 +94,9 @@ public class CodeforcesContest188ProblemB{
 <div class="projects">
     <h1 class="lead"><u>Last Live Contests</u></h1>
     <div class="project-container">
-        <div class="project-item">
+        <div class="project-item" >
             <p>Used Languages:</p>
-            <div class="grid-container">
+            <div class="grid-container"style="box-shadow: none;">
                 <div class="grid-item">
                     <i class="devicon-java-plain"></i>
                     <span class="grid-item-desc">Java</span><br>
@@ -164,5 +165,13 @@ public class CodeforcesContest188ProblemB{
 </div>
 </div>
 </div>
+<br>
+<footer>
+    <hr>
+
+    <i class="fa-brands fa-github hoverable" aria-hidden="true"></i>
+    <i class="fa-brands fa-youtube hoverable" aria-hidden="true"></i>
+    <i class="fa-brands fa-soundcloud hoverable" aria-hidden="true" ></i>
+</footer>
 </body>
 </html>
